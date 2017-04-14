@@ -1,0 +1,83 @@
+:root {
+  --max-width: 1024px;
+  --paddingSize: 3rem;
+  --font-color: #4e4e4e;
+  --body-font-size: 16px;
+
+  /* Color Palette */
+  --main-color: #4e4e4e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Typography */
+body {
+  font: normal var(--body-font-size) 'Raleway', sans-serif;
+  color: var(--main-color);
+}
+
+h1, h2, h3, h4, h5 { font-weight: 300; }
+
+h1 { font-size: 2.67rem; }
+h2 { font-size: 1.89rem; }
+h3 { font-size: 1.43rem; }
+h4 { font-size: 1.11rem; }
+
+/* Responsive grid layout */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] { float: left; }
+
+/* Flex layout helper classes*/
+.flex-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-bar-start { align-self: flex-start; }
+.flex-bar-end { align-self: flex-end; }
+.flex { display: flex; }
+.align-items-center { align-items: center; }
+.flex-1 { flex: 1 1 auto; }
+.justify-content-end { justify-content: flex-end; }
+
+/* Layout helper classes */
+.padding-right { padding-right: 3rem; }
+
+.text-align-right { text-align: right; }

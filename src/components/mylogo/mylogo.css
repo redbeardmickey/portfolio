@@ -1,0 +1,43 @@
+.mylogo {
+  height: 40px;
+  width: 55px;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mylogo-circle {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid #808080;
+}
+
+.mylogo-line {
+  height: 100%;
+  width: 1px;
+  transform: skew(135deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom left;
+  background-color: #808080;
+}
+
+.mylogo-line:nth-child(2) {
+  transform: skew(135deg)
+}
+
+.mylogo-line:nth-child(3) {
+  transform: translate(5px) skew(135deg)
+}
+
+.mylogo-line:nth-child(4) {
+  transform: translate(10px) skew(135deg)
+}
+
+.mylogo-line:nth-child(5) {
+  transform: translate(15px) skew(135deg)
+}

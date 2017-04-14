@@ -1,0 +1,34 @@
+.my-header {
+  height: 80px;
+  font-size: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+
+.header-logo {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.header-name {
+  display: inline-block;
+  padding-left: 20px;
+  line-height: 24px;
+  color: #4e4e4e;
+}
+
+@media (max-width: 425px) {
+  .header-name {
+    display: none;
+  }
+}
+
+.branding {
+  height: 80px;
+}
